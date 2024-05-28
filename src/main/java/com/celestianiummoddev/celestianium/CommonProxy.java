@@ -8,9 +8,7 @@ public class CommonProxy {
     // etc, and register them with the GameRegistry."
     public void preInit(FMLPreInitializationEvent event) 	{
         Config.syncronizeConfiguration(event.getSuggestedConfigurationFile());
-
-        MyMod.info(Config.greeting);
-        MyMod.info("I am " + Tags.MODNAME + " at version " + Tags.VERSION + " and group name " + Tags.GROUPNAME);
+        CelestianiumModItems.init();
     }
 
     // load "Do your mod setup. Build whatever data structures you care about. Register recipes."
